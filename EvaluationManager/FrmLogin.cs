@@ -58,6 +58,9 @@ namespace EvaluationManager
                 {
                     MessageBox.Show("Dobrodošli!", "Prijavljeni ste",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FrmStudents frmStudents = new FrmStudents();
+                    frmStudents.ShowDialog();
+
                 }
                 else
                 {
