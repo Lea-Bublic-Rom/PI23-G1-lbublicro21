@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EvaluationManager
-{
-    public partial class FrmStudents : Form
-    {
-        public FrmStudents()
-        {
+namespace EvaluationManager {
+    public partial class FrmStudents : Form {
+        public FrmStudents() {
             InitializeComponent();
+        }
+        public void FrmStudents_Load(object sender, EventArgs e) {
+            ShowStudents();
+        }
+
+        public void ShowStudents() {
+            List<Student> students = StudentRepository.GetStudents();
+            dgvStudents.DataSource = students;
         }
     }
 }
