@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Student : Person
-{
-    public int Grade { get; set; }
-
+namespace EvaluationManager {
+    public class Student : Person {
+        public int Grade { get; set; }
+    }
 }
