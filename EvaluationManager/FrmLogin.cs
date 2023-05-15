@@ -11,11 +11,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace EvaluationManager
 {
-    public partial class Form1 : Form
+    public partial class FrmLogin : Form
     {
-        string KorIme = "nastavnik";
-        string Lozinka = "test";
-        public Form1()
+       public static Teacher LoggedTeacher { get; set; }
+        public FrmLogin()
         {
             InitializeComponent();
         }
@@ -54,13 +53,18 @@ namespace EvaluationManager
             }
             else
             {
-                if (txtKorIme.Text == KorIme && txtLozinka.Text == Lozinka)
+                LoggedTeacher = TeacherRepository.GetTeacher(txtKorIme.Text);
+                if (LoggedTeacher != null && LoggedTeacher.Password == txtLozinka.Text)
                 {
                     MessageBox.Show("Dobrodošli!", "Prijavljeni ste",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                     FrmStudents frmStudents = new FrmStudents();
-                    frmStudents.ShowDialog();
+                    Hide();
+                    frmStudents.Text = $"{LoggedTeacher.FirstName} {LoggedTeacher.LastName}";
+                    Hide();
 
+                    frmStudents.ShowDialog();
+                    Close();
                 }
                 else
                 {

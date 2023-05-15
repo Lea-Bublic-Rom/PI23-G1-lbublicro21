@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using DBLayer;
 
 namespace EvaluationManager {
-    internal class StudentReoisitory {
+    internal class StudentRepoisitory {
         public static Student GetStudent(int id) {
             Student student = null;
             string sql = $"SELECT * FROM Students WHERE Id = {id}";

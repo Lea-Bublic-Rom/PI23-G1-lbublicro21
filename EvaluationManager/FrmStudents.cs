@@ -23,7 +23,7 @@ namespace EvaluationManager {
         }
 
         private void ShowStudents() {
-            List<Student> students = StudentReoisitory.GetStudents();
+            List<Student> students = StudentRepoisitory.GetStudents();
             dgvStudents.DataSource = students;
             dgvStudents.Columns["Id"].DisplayIndex = 0;
             dgvStudents.Columns["FirstName"].DisplayIndex = 1;
