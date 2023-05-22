@@ -51,19 +51,6 @@ namespace EvaluationManager
             Z2 = zadaca1 == null ? "-" : zadaca2.Points.ToString();
             Z3 = zadaca1 == null ? "-" : zadaca3.Points.ToString();
         }
-        private List<StudentReportView> GenerateStudentReport()
-        {
-            var allStudents = StudentRepoisitory.GetStudents();
-            var examReports = new List<StudentReportView>();
-            foreach (var student in allStudents)
-            {
-                if (student.HasSignature() == true)
-                {
-                    var examReport = new StudentReportView(student);
-                    examReports.Add(examReport);
-                }
-            }
-            return examReports;
-        }
+        
     }
 }
