@@ -77,7 +77,7 @@ namespace EvaluationManager {
         {
             int grade = 0;
 
-            if (HasGrade() = true)
+            if (HasGrade() == true)
             {
                 int totalPoints = CalculateTotalPoints();
 
