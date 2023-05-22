@@ -45,7 +45,7 @@
             // 
             this.cboActivities.FormattingEnabled = true;
             this.cboActivities.Location = new System.Drawing.Point(38, 37);
-            this.cboActivities.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboActivities.Margin = new System.Windows.Forms.Padding(2);
             this.cboActivities.Name = "cboActivities";
             this.cboActivities.Size = new System.Drawing.Size(135, 21);
             this.cboActivities.TabIndex = 0;
@@ -54,7 +54,7 @@
             // txtActivityDescription
             // 
             this.txtActivityDescription.Location = new System.Drawing.Point(38, 76);
-            this.txtActivityDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtActivityDescription.Margin = new System.Windows.Forms.Padding(2);
             this.txtActivityDescription.Name = "txtActivityDescription";
             this.txtActivityDescription.Size = new System.Drawing.Size(388, 199);
             this.txtActivityDescription.TabIndex = 1;
@@ -63,7 +63,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(231, 37);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 2;
@@ -71,7 +71,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(350, 37);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(76, 20);
             this.textBox2.TabIndex = 3;
@@ -79,7 +79,7 @@
             // txtTeacher
             // 
             this.txtTeacher.Location = new System.Drawing.Point(200, 307);
-            this.txtTeacher.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTeacher.Margin = new System.Windows.Forms.Padding(2);
             this.txtTeacher.Name = "txtTeacher";
             this.txtTeacher.Size = new System.Drawing.Size(76, 20);
             this.txtTeacher.TabIndex = 4;
@@ -87,7 +87,7 @@
             // txtEvaluationDate
             // 
             this.txtEvaluationDate.Location = new System.Drawing.Point(287, 307);
-            this.txtEvaluationDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEvaluationDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtEvaluationDate.Name = "txtEvaluationDate";
             this.txtEvaluationDate.Size = new System.Drawing.Size(82, 20);
             this.txtEvaluationDate.TabIndex = 5;
@@ -95,7 +95,7 @@
             // numPoints
             // 
             this.numPoints.Location = new System.Drawing.Point(384, 308);
-            this.numPoints.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numPoints.Margin = new System.Windows.Forms.Padding(2);
             this.numPoints.Name = "numPoints";
             this.numPoints.Size = new System.Drawing.Size(40, 20);
             this.numPoints.TabIndex = 6;
@@ -163,7 +163,7 @@
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(292, 344);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(56, 19);
             this.btnSave.TabIndex = 13;
@@ -173,7 +173,7 @@
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(368, 344);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(56, 19);
             this.btnCancel.TabIndex = 14;
@@ -201,7 +201,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtActivityDescription);
             this.Controls.Add(this.cboActivities);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmEvaluation";
             this.Text = "FrmEvaluation";
             this.Load += new System.EventHandler(this.FrmEvaluation_Load);

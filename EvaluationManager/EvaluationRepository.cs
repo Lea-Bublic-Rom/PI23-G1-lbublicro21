@@ -92,7 +92,7 @@ namespace EvaluationManager
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var activity = cboActivities.SelectedItem as Activity
+            var activity = cboActivities.SelectedItem as Activity;
         }
 
     }
