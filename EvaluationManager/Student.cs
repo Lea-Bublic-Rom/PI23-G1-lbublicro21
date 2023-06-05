@@ -11,7 +11,7 @@ namespace EvaluationManager {
 
         public List<Evaluation> GetEvaluations()
         {
-            return EvaluationRepository.GetEvaluation(this);
+            return EvaluationRepository.GetEvaluations(this);
         }
 
         public int CalculateTotalPoints()
